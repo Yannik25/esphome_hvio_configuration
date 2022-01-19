@@ -10,7 +10,7 @@ jobs:
     strategy:
       matrix:
         file:
-          - esphome_hvio_configuration.yaml
+          - esphome-hvio-configuration.yaml
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
