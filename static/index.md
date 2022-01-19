@@ -1,6 +1,7 @@
 # About
 
-Add some information about your project here.
+ESPHome Configuration for:
+https://luani.de/projekte/esp8266-hvio/
 
 # Installation
 

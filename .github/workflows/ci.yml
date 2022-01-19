@@ -10,7 +10,6 @@ jobs:
     strategy:
       matrix:
         file:
-          - project-template-esp32.yaml
           - esphome_hvio_configuration.yaml
     steps:
       - name: Checkout source code
