@@ -1,7 +1,11 @@
 # About
 
 ESPHome Configuration for:
-https://luani.de/projekte/esp8266-hvio/
+<a href="https://luani.de/projekte/esp8266-hvio/">https://luani.de/projekte/esp8266-hvio/</a>.
+<center>
+    <img src="https://raw.githubusercontent.com/Yannik25/esphome_hvio_configuration/main/pcb3d.jpg" alt="image of hvio module" />
+</center>
+
 
 # Installation
 
