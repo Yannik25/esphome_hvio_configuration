@@ -12,7 +12,7 @@ esphome:
   # configuration and updates.
   project:
     name: Yannik25.hvio-switch-module
-    version: "1.1"
+    version: "1.2"
 
 esp8266:
   board: nodemcuv2
@@ -27,10 +27,6 @@ api:
 ota:
   - platform: esphome
 
-# This should point to the public location of this yaml file.
-dashboard_import:
-  package_import_url: github://Yannik25/esphome_hvio_configuration/esphome-hvio-configuration.yaml@main
-  
 wifi:
   # Set up a wifi access point using the device name above
   ap:
@@ -66,7 +62,6 @@ binary_sensor:
 ##########################################################
 # Most projects should not remove anything from above here
 # and should just modify the name, project name/version 
-# and git url for the dashboard_import
 ##########################################################
 
 
