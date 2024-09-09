@@ -2,7 +2,7 @@
   "chipFamily": "ESP8266",
   "ota": {
     "path": "hvio-switch-module-esp8266/hvio-switch-module-esp8266.ota.bin",
-    "md5": "a43890fe9a322ca90db74a862bed277e"
+    "md5": "d6f4fd4fa539582e327d99e1a78207f6"
   },
   "parts": [
     {
