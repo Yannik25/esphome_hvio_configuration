@@ -43,13 +43,13 @@ status_led:
 switch:
   - platform: gpio
     pin: GPIO4
-    id: ${devicename}_relay_1
-    name: ${devicename} Output 1
+    id: ${name}_relay_1
+    name: ${name} Output 1
     restore_mode: RESTORE_DEFAULT_OFF
   - platform: gpio
     pin: GPIO5
-    id: ${devicename}_relay_2
-    name: ${devicename} Output 2
+    id: ${name}_relay_2
+    name: ${name} Output 2
     restore_mode: RESTORE_DEFAULT_OFF
     
 binary_sensor:
@@ -57,12 +57,12 @@ binary_sensor:
     pin: 
       number: GPIO12
       inverted: true
-    name: ${devicename} Input 1
+    name: ${name} Input 1
   - platform: gpio
     pin: 
       number: GPIO13
       inverted: true
-    name: ${devicename} Input 2
+    name: ${name} Input 2
     
 ##########################################################
 # Most projects should not remove anything from above here
