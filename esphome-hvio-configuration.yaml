@@ -43,12 +43,12 @@ status_led:
 switch:
   - platform: gpio
     pin: GPIO4
-    id: ${name}_relay_1
+    id: hvio_relay_1
     name: ${name} Output 1
     restore_mode: RESTORE_DEFAULT_OFF
   - platform: gpio
     pin: GPIO5
-    id: ${name}_relay_2
+    id: hvio_relay_2
     name: ${name} Output 2
     restore_mode: RESTORE_DEFAULT_OFF
     
