@@ -1,9 +1,5 @@
-# These substitutions allow the end user to override certain values
-substitutions:
-  name: "hvio-switch-module"
-
 esphome:
-  name: "${name}"
+  name: "hvio-switch-module"
   # Automatically add the mac address to the name
   # so you can use a single firmware for all devices
   name_add_mac_suffix: true
@@ -44,14 +40,12 @@ switch:
   - platform: gpio
     pin:
       number: GPIO4
-      allow_other_uses: true
     id: hvio_relay_1
     name: ${name} Output 1
     restore_mode: RESTORE_DEFAULT_OFF
   - platform: gpio
     pin:
       number: GPIO5
-      allow_other_uses: true
     id: hvio_relay_2
     name: ${name} Output 2
     restore_mode: RESTORE_DEFAULT_OFF
@@ -61,13 +55,11 @@ binary_sensor:
     pin: 
       number: GPIO12
       inverted: true
-      allow_other_uses: true
     name: ${name} Input 1
   - platform: gpio
     pin: 
       number: GPIO13
       inverted: true
-      allow_other_uses: true
     name: ${name} Input 2
     
 ##########################################################
