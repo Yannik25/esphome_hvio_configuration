@@ -37,27 +37,32 @@ wifi:
 captive_portal:
 
 status_led:
-  pin: GPIO15
+  pin:
+    number: GPIO0
 
 switch:
   - platform: gpio
     pin: GPIO4
-    name: "Output 1"
+    id: ${devicename}_relay_1
+    name: ${devicename} Output 1
+    restore_mode: RESTORE_DEFAULT_OFF
   - platform: gpio
     pin: GPIO5
-    name: "Output 2"
+    id: ${devicename}_relay_2
+    name: ${devicename} Output 2
+    restore_mode: RESTORE_DEFAULT_OFF
     
 binary_sensor:
   - platform: gpio
     pin: 
-      number: D6
+      number: GPIO12
       inverted: true
-    name: "Input 1"
+    name: ${devicename} Input 1
   - platform: gpio
     pin: 
-      number: D7
+      number: GPIO13
       inverted: true
-    name: "Input 2"
+    name: ${devicename} Input 2
     
 ##########################################################
 # Most projects should not remove anything from above here
