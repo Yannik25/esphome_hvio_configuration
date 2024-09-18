@@ -42,31 +42,33 @@ status_led:
 
 switch:
   - platform: gpio
-    pin: GPIO4
+    pin:
+      number: GPIO4
+      allow_other_uses: true
     id: hvio_relay_1
     name: ${name} Output 1
     restore_mode: RESTORE_DEFAULT_OFF
-    allow_other_uses: true
   - platform: gpio
-    pin: GPIO5
+    pin:
+      number: GPIO5
+      allow_other_uses: true
     id: hvio_relay_2
     name: ${name} Output 2
     restore_mode: RESTORE_DEFAULT_OFF
-    allow_other_uses: true
     
 binary_sensor:
   - platform: gpio
     pin: 
       number: GPIO12
       inverted: true
+      allow_other_uses: true
     name: ${name} Input 1
-    allow_other_uses: true
   - platform: gpio
     pin: 
       number: GPIO13
       inverted: true
+      allow_other_uses: true
     name: ${name} Input 2
-    allow_other_uses: true
     
 ##########################################################
 # Most projects should not remove anything from above here
